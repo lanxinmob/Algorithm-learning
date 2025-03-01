@@ -212,7 +212,7 @@ Wint operator-(Wint a,const Wint &b)
 {
     return a-=b;
 }
-//乘法不能先实现*=，原因自己想
+//乘法不能先实现*=
 Wint operator*(const Wint &a,const Wint &b)
 {
     Wint n;
