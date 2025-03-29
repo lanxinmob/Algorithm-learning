@@ -28,7 +28,7 @@ void dijkstra(int v,int f,int prev[],int dist[]){
         if(k==f)break;
         for (int j = 0; j < q; j++)//松弛操作
         {   temp = (matrix[k][j]==INF)?INF:min+matrix[k][j];//防止溢出
-            if(!flag[j]&&dist[j]<temp)
+            if(!flag[j]&&dist[j]>temp)
             {
                 prev[j] = k;
                 dist[j] = temp;

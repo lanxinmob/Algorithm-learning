@@ -1,5 +1,5 @@
 //使用队列的bellman-ford
-//用静态邻接表的版本 
+//用静态邻接表的版本 链式前向星
 #include<iostream>
 #include<queue>
 const int INF = 100000000;

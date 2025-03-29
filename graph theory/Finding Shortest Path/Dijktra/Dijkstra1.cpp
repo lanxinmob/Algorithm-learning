@@ -30,7 +30,7 @@ int main(){
         q.pop();
         if(book[x])continue;
         book[x]=1;
-        for (int i = head[x]; i; i = nex[x]){
+        for (int i = head[x]; i; i = nex[i]){
             if(dis[to[i]]>dis[x]+val[i]&&!book[to[i]])
 			{
 				dis[to[i]]=dis[x]+val[i];
