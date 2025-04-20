@@ -1,4 +1,4 @@
-//P3876
+//P3879 阅读理解
 #include<iostream>
 #include<unordered_map>
 #include<set>
@@ -10,9 +10,9 @@ unordered_map<string,set<int>>word;
 int main(){
     cin.tie(0);
     ios::sync_with_stdio(0);
-    n = read();
+    cin>>n;
     for(int i=1;i<=n;i++){
-        l = read();
+        cin>>l;
         for(int j=0;j<l;j++){
             cin>>str;
             word[str].insert(i);
